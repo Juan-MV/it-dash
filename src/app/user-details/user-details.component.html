@@ -1,0 +1,12 @@
+<div class="dashboard-container">
+    <div *ngIf="isLoading">Loading user details...</div>
+    <div *ngIf="errorMessage">{{ errorMessage }}</div>
+    <div *ngIf="user && !isLoading" class="user-details">
+    <h2>{{ user.name.first }} {{ user.name.last }}</h2>
+    <img [src]="user.picture.large" alt="{{ user.name.first }}" />
+    <p><strong>Email:</strong> {{ user.email }}</p>
+    <p><strong>Phone:</strong> {{ user.phone }}</p>
+    <p><strong>Address:</strong> {{ user.location.street.number }} {{ user.location.street.name }}, 
+        {{ user.location.city }}, {{ user.location.country }}</p>
+    </div>
+</div>

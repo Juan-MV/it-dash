@@ -1,0 +1,47 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+/* Style the top bar */
+.top-bar {
+  position: fixed; /* Fix it to the top of the screen */
+  top: 0;
+  left: 0;
+  width: 100%; /* Make it span the full width of the screen */
+  background-color: #007bff; /* Or any background color you want */
+  color: #fff; /* Text color */
+  padding: 10px 0; /* Adjust the padding as needed */
+  z-index: 1000; /* Make sure it's above other content */
+}
+
+/* Style for the links */
+.top-bar ul {
+  display: flex;
+  justify-content: flex-start;
+  padding-left: 20px; /* Adjust based on how you want the items to be aligned */
+}
+
+.top-bar ul li {
+  list-style: none;
+  padding-right: 20px; /* Space between the links */
+}
+
+.top-bar ul li a {
+  text-decoration: none;
+  color: #fff; /* Link color */
+  font-size: 18px; /* Font size for links */
+  transition: color 0.3s ease-in-out;
+}
+
+/* Hover effect for links */
+.top-bar ul li a:hover {
+  color: #f4f4f4;
+  cursor: pointer;
+}
